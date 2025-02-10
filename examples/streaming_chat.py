@@ -3,7 +3,7 @@ import asyncio
 from inferra import InferraClient
 
 async def main():
-    client = InferraClient(api_key=os.getenv("INFERRA_API_KEY"))
+    client = InferraClient(api_key=os.getenv("INFERRA_API_KEY")) # Find this in your dashboard
     
     async for chunk in await client.chat.create(
         model="meta-llama/llama-3.1-8b-instruct/fp-8",
