@@ -2,7 +2,7 @@ import os
 from inferra import InferraClient, InferraAPIError, InferraRateLimitError
 
 def main():
-    client = InferraClient(api_key=os.getenv("INFERRA_API_KEY"))
+    client = InferraClient(api_key=os.getenv("INFERRA_API_KEY")) # Find this in your dashboard
     
     try:
         response = client.chat.create(
