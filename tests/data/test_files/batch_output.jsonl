@@ -1,0 +1,2 @@
+{"id": "batch_req_123", "custom_id": "request-1", "response": {"status_code": 200, "body": {"id": "chatcmpl-123", "choices": [{"message": {"content": "The capital of France is Paris."}}]}}}
+{"id": "batch_req_124", "custom_id": "request-2", "response": {"status_code": 200, "body": {"id": "chatcmpl-124", "choices": [{"message": {"content": "The capital of Germany is Berlin."}}]}}}
