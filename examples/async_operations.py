@@ -10,7 +10,7 @@ async def process_conversation(client, conversation):
     return response.choices[0].message.content
 
 async def main():
-    client = InferraClient(api_key=os.getenv("INFERRA_API_KEY"))
+    client = InferraClient(api_key=os.getenv("INFERRA_API_KEY")) # Find this in your dashboard
     
     conversations = [
         [{"role": "user", "content": "Tell me a joke."}],
