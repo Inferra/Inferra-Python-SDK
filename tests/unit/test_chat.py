@@ -35,7 +35,7 @@ async def test_chat_completion_streaming(client, mocker, sample_responses):
         model="meta-llama/llama-3.1-8b-instruct/fp-8",
         messages=[Message(role="user", content="Hi")],
         stream=True
-    ):
+    ): 
         chunks.append(chunk)
     
     assert len(chunks) > 0
