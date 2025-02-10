@@ -1,0 +1,54 @@
+{
+    "chat_completion": {
+        "id": "chatcmpl-123",
+        "object": "chat.completion",
+        "created": 1677649420,
+        "model": "meta-llama/llama-3.1-8b-instruct/fp-8",
+        "usage": {
+            "prompt_tokens": 25,
+            "completion_tokens": 32,
+            "total_tokens": 57
+        },
+        "choices": [
+            {
+                "index": 0,
+                "message": {
+                    "role": "assistant",
+                    "content": "The meaning of life is a philosophical and deeply personal question that has been pondered throughout human history."
+                },
+                "finish_reason": "stop"
+            }
+        ]
+    },
+    "streaming_chunk": {
+        "id": "chatcmpl-123",
+        "object": "chat.completion.chunk",
+        "created": 1677649420,
+        "model": "meta-llama/llama-3.1-8b-instruct/fp-8",
+        "choices": [
+            {
+                "index": 0,
+                "delta": {
+                    "content": "The meaning"
+                },
+                "finish_reason": null
+            }
+        ]
+    },
+    "batch_status": {
+        "id": "batch_123",
+        "object": "batch",
+        "status": "completed",
+        "input_file_id": "file-input-123",
+        "output_file_id": "file-output-123",
+        "error_file_id": null,
+        "completion_window": "24h",
+        "created_at": 1677649420,
+        "completed_at": 1677649480,
+        "request_counts": {
+            "total": 2,
+            "completed": 2,
+            "failed": 0
+        }
+    }
+}
