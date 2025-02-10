@@ -3,7 +3,7 @@ import asyncio
 from inferra import InferraClient
 
 async def main():
-    client = InferraClient(api_key=os.getenv("INFERRA_API_KEY")) # Add the key you get from the dashbpard
+    client = InferraClient(api_key=os.getenv("INFERRA_API_KEY")) # Find this in your dashboard
     
     # Create batch input file
     batch_input = [
